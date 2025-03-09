@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "biome check src",
     "format": "biome format --write src",
-    "start": "node src/index.ts",
-    "dev": "node --watch src/index.ts"
+    "start": "node --experimental-strip-types src/index.ts",
+    "dev": "node --watch --experimental-strip-types src/index.ts"
   },
   "keywords": [],
   "author": "",
